@@ -16,7 +16,7 @@ public class ClassDemo4 {
         String[] q = openFoamResult.list();
 
         for (int a = 0; a < q.length; a++) {
-            String openFoamResultPatch = openFoamResult.getCanonicalPath();
+            String openFoamResultPatch = openFoamResult.getCanonicalPath(); //getCanonical это полный путь!
 
 
 
