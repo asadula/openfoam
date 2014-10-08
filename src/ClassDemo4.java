@@ -14,13 +14,13 @@ public class ClassDemo4 {
 
         //Создаётся массив каждый эллемент которого будет имя файла
         String[] q = openFoamResult.list();
-
+//цикл для каждого файла
         for (int a = 0; a < q.length; a++) {
             String openFoamResultPatch = openFoamResult.getCanonicalPath(); //getCanonical это полный путь!
 
 
 
-
+//создание буферизированного потока
         BufferedReader reader = new BufferedReader(new FileReader(pathResult+q[a]));
         List<String> lines = new ArrayList<String>();
         String line;
