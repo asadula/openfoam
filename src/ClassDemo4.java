@@ -11,7 +11,7 @@ public class ClassDemo4 {
         System.out.print("Please write pach to result\n");
         String pathResult = reader1.readLine()+"/";
         File openFoamResult = new File(pathResult);
-
+String pathResultOk="points/OK/";
         //Создаётся массив каждый эллемент которого будет имя файла
         String[] q = openFoamResult.list();
 //цикл для каждого файла
@@ -30,17 +30,18 @@ public class ClassDemo4 {
         }
         reader.close();
         String[] array = lines.toArray(new String[lines.size()]);
+           Arrays.sort(array);
 
-            PrintWriter out = new PrintWriter(new FileWriter(pathResult+"ok.csv",true ));
+            PrintWriter out = new PrintWriter(new FileWriter(pathResultOk+"ok"+a+".csv",true ));
         for (String s : array) {
             out.println(s);
 
         }
-
-
-
-
             out.close();
+
+
+
+
     }
 
 }
