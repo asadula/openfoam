@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
  
-public class ClassDemo4 {
+public class sort {
     public static void main(String[] args) throws IOException {
 //Путь до дерриктории с результатами
         BufferedReader reader1 = new BufferedReader(new InputStreamReader(System.in));
