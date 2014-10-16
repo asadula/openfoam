@@ -26,17 +26,18 @@ String pathResultOk="points/OK/";
         String line;
         while ((line = reader.readLine()) != null) {
             lines.add(line);
-
         }
+
         reader.close();
         String[] array = lines.toArray(new String[lines.size()]);
            Arrays.sort(array);
 
-            PrintWriter out = new PrintWriter(new FileWriter(pathResultOk+"ok"+a+".csv",true ));
+            PrintWriter out = new PrintWriter(new FileWriter(pathResult+"ok.csv",true ));
         for (String s : array) {
             out.println(s);
 
         }
+            out.println();
             out.close();
 
 
